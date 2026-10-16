@@ -1,14 +1,27 @@
 {% load static %}
 <html>
     <head>
-        <title>Главная страница</title>
         <link rel="stylesheet" href="{% static 'main/style.css' %}">
+        <title>Рецепты</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
 
-        <a href="/about/">
-            <button>вторая страница</button>
-        </a>
+    <body>
+
+        <header class="header">
+            <div class="main-container">
+                <div class="text-header">Рецепты на каждый день</div>
+            </div>
+        </header>
+
+        <main class="main-container">
+
+            <div class="grid-container">
+                <div class="card">суп</div>
+                <div class="card">каша</div>
+                <div class="card">салат</div>
+            </div>
+
+        </main>
+
     </body>
 </html>
